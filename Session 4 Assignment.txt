@@ -1,0 +1,36 @@
+===========
+session 5
+===========
+
+1. Create array of object of a class Rectangle. Create a  AreaCalculatorManager Class having method say printAreaofObjects(This method takes argument as array of object and calls the calArea() method of each object) 
+	Make sure while creating the Rectangle class, the class has 
+	a. Default contructor which assigns some deafult vale to len and bred of each object 
+	b. Create a parametric contructor which take len and bred as argument and assigns the value to the class member len and bred
+	c. Make sure to use the default as well parametric contructor while creating the Rectangle object
+
+	class Rectangle{
+
+	int len;
+	int bred;
+
+	default constructor
+	parametric constructor
+
+	public void calArea(){
+	System.out.println("Area of the current object is " + this.len*this.bred)
+	}
+	}
+
+
+	class AreaCalculatorManager{
+
+	public void printAreaofObjects(Rectangle objects[]){
+
+	//call each reactangle instance calArea() method 
+	}
+	}
+
+Note: Make sure to use the AreaCalculatorManager instance in the Driverclass
+
+
+>>>>> Dhanjeet: I have uploaded this assignment as https://github.com/dan-singh/java/tree/master/ClassAssignment
