@@ -1,0 +1,135 @@
+===========
+session 3:
+===========
+1. What are the Primitive, non-primitive and reference variables. List Examples.
+Answer: 
+	
+	Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java:
+	
+	Primitive data types: 
+	In Java language, primitive data types are the building blocks of data manipulation. These are the most basic data types available in Java language.
+	Java is a statically-typed programming language. It means, all variables must be declared before its use. That is why we need to declare variable's type and name.
+	The primitive data types include boolean, char, byte, short, int, long, float and double.
+	
+	Non-primitive data types: 
+	The non-primitive data types include Classes, Interfaces, and Arrays.
+
+	Reference Variables Types:
+	A reference variable is declared to be of a specific type and that type can never be changed. Reference variables can be declared as static variables, instance variables, method parameters, or local variables. A reference variable that is declared as final can't never be reassigned to refer to a different object.
+	
+
+
+
+2. Why objects are refered as reference type?
+Answer: 
+	Objects are referred to as reference type as it can be assigned muliple times to any different instance of object and still can point to multiple same instance of the object. When a reference type is assigned to another reference type, both will point to the same object. When an object is passed into a method, the called method can change the contents of the object passed to it but not the address of the object.
+
+
+3. Trace the output:
+	class Rectangle{
+		int len;
+		int bred;
+
+	public Rectangle()
+	{
+		sysout("Constructor called");
+		this.len = 100;
+		this.bred = 20;
+	} 
+
+
+	public void  calArea(){
+		sysout("Area is " + len*bred);
+}
+
+public int getLength(){
+	return this.len;
+}
+
+public int getBredth(){
+	return this.len;
+}
+
+public void setLength(int len){
+this.len = len;
+}
+
+public void setBredth(int bred){
+this.bred = bred;
+}
+
+}
+
+Trace the output:
+a.) 
+	Rectangle rec = new Rectangle();
+	rec.calArea();
+
+output:: 
+	Constructor called
+	Area is 2000
+
+b)
+	Rectangle rec1 = new Rectangle();
+	Rectangle rec2 = new Rectangle();
+
+	if(rec1 == rec2){
+	sysout("Equal");
+	}
+	else{
+	sysout("Not Equal");
+	}
+	
+output: Not Equal
+
+
+c) 
+	Rectangle rec1 = new Rectangle();
+	Rectangle rec2 = new Rectangle();
+
+
+	if(rec1.getLength == rec2.getLength)
+	{
+	sysout("Equal");
+	}
+
+	else{
+	sysout("Not Equal");
+	}
+
+output: Equal
+
+d) 
+	Rectangle rec1 = new Rectangle();
+	Rectangle rec2 = new Rectangle();
+
+	rec1.setLength(12);
+
+	if(rec1.getLength == rec2.getLength){
+	sysout("Equal");
+	}
+	
+	else{
+	sysout("Not Equal");
+	}
+
+output: Not Equal
+
+
+e)
+ 
+	Rectangle rec1 = new Rectangle();
+	Rectangle rec2 = new Rectangle();
+
+	rec1= rec2
+
+	if(rec1 == rec2){
+	sysout("Equal");
+	}
+	
+	else{
+	sysout("Not Equal");
+	}
+
+output: Equal
+
