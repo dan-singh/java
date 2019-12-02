@@ -1,0 +1,43 @@
+session 10: Exception and error handling
+---------------------------------------
+
+1. List down the runtime and compile time exception
+
+2. Create a custom exception which is thrown whenever the name passed into a method is equal to test 
+
+i.e.
+
+validation(String name) //throws your custome exception 
+{
+
+check if the name is equal to "test"
+throw exception say "InvalidNameException"
+}
+
+
+3. Create custom checked exception
+
+4. output tracking
+
+check(int n){
+
+try{
+int a = n/0;
+}catch(NumberFormatException ex){
+sysout("Number format exception occrure")
+}catch(Exception ex){
+sysout("Exceotion happened")
+}finally{
+sysout(completed)
+}
+
+sysout("program completed")
+
+}
+
+
+
+Session 10:
+1. Create a Marker interface say Ishape 
+2. Create a class say CalculateOperation which contains memeber method as calculateAreaForShape wiht the parameter as Object 
+3. Create your own customize exception say CalculateAreaNotSupported
